@@ -26,3 +26,28 @@ Person.prototype = {
 
 var mark = new Person("Mark", "Miller");
 mark.toString() // "Mark Miller"
+
+Different to class-based inheritance, in prototype-based js there's one shared prototype, on which multiple child instances are based.
+
+example:
+
+function Human()
+{
+	this.name;
+}
+
+Mister.prototype = new Human();
+
+var mister1 = new Mister();
+var mister2 = new Mister();
+
+mister1.name = "Peter";
+console.log(mister2.name); // output: "Peter"
+
+
+requirejs trap:
+
+define(function(require){
+	// if anything goes in this line (including comments), requirejs crashes
+    var moduleToImport = require('moduletoImport');
+	...
