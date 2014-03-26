@@ -1,4 +1,4 @@
-css DPI
+### css DPI
 
 To apply a style sheet to devices with at least 300 dots per inch of resolution:
 
@@ -9,7 +9,7 @@ Change CSS with js:
 document.getElementById('id').style.width = value;
 
 
-Inheritance (kind of) http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/
+### Inheritance (kind of) http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/
 
 var child = Object.create(parent);
 
@@ -45,7 +45,7 @@ mister1.name = "Peter";
 console.log(mister2.name); // output: "Peter"
 
 
-requirejs trap:
+### requirejs trap:
 
 define(function(require){
 	// if anything goes in this line (including comments), requirejs crashes
